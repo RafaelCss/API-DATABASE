@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import IconHeader from "./IconHeader"
+import { MenuHeader } from "./MenuHeader";
 import '../Components/Styles/HeaderPage.css'
 
 class HeaderPage extends Component {
@@ -11,6 +12,7 @@ class HeaderPage extends Component {
             Talking
             <IconHeader/>
           </h1>
+            <MenuHeader/>
         </div>
       </header>
     );

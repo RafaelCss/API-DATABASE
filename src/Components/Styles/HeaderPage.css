@@ -1,4 +1,22 @@
-div {
-    margin: 0;
-    padding: 0;
+header {
+  display: flex;
+  background: rgba(28, 51, 224, 0.555);
+}
+
+nav li {
+  display: inline;
+  padding: 0 0 0 15px;
+}
+
+nav a {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+nav a :hover {
+  text-decoration: underline;
+  color: blueviolet;
 }
