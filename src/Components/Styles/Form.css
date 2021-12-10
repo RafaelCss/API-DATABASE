@@ -1,20 +1,25 @@
 .Form {
   display: flex; 
-  justify-content: center;
-  height: 200px;
+  justify-content: center;  
+  align-items: center;
+  height: 400px;
   width: 100%;
-  background-color: beige; 
+  background: aquamarine;
 }
 
 .Form section {
    display: flex;
+   width:80%;
    align-items: center;
-   margin: 10px;
    padding: 10px 10px; 
    justify-content: space-evenly; 
+   background: blue;
 }
 
 .Form section input {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly; 
     margin: 10px;
 
 }

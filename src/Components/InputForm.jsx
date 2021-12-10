@@ -38,8 +38,11 @@ class InputForm extends Component {
   render() {
     return (
       <section>
+        <label htmlFor="name">Nome:</label>
         <input type='text' name='name' value={this.state.name} onChange={this.dataForm.bind(this)} id='name' />
+        <label htmlFor="email">Email:</label>
         <input type='email' name='email' value={this.state.email} onChange={this.dataForm.bind(this)} id='email' />
+        <label htmlFor="password">Senha:</label> 
         <input type='password' name='password' value={this.state.password} onChange={this.dataForm.bind(this)} id='password' />
         <button  type ="submit" onClick={event=>this._onSubmit(this)}>Enviar</button>
       </section>
