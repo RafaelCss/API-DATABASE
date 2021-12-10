@@ -9,6 +9,7 @@ class Form extends Component {
   render() {
     return (
       <form className='Form'>
+        <h2 className="Title">Faça Seu Cadastro</h2>
         <InputForm onSubmit={this.onSubmit}/>
       </form>
     );
