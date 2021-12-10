@@ -40,11 +40,11 @@ class InputForm extends Component {
       <section>
         <div className="inputs">
           <label htmlFor='name'>Nome:</label>
-          <input type='text' name='name' id="name" value={this.state.name} onChange={this.dataForm.bind(this)} id='name' />
+          <input type='text' name='name'value={this.state.name} onChange={this.dataForm.bind(this)} id='name' />
           <label htmlFor='email'>Email:</label>
-          <input type='email' name='email' id="email" value={this.state.email} onChange={this.dataForm.bind(this)} id='email' />
+          <input type='email' name='email'  value={this.state.email} onChange={this.dataForm.bind(this)} id='email' />
           <label htmlFor='password'>Senha:</label>
-          <input type='password' name='password' id="password"value={this.state.password} onChange={this.dataForm.bind(this)} id='password' />
+          <input type='password' name='password' value={this.state.password} onChange={this.dataForm.bind(this)} id='password' />
           <button type='submit' onClick={(event) => this._onSubmit(this)}>
             Cadastrar
           </button>
