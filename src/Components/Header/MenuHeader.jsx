@@ -1,5 +1,5 @@
 import React from "react";
-import '../Components/Styles/HeaderPage.css'
+import '../Styles/HeaderPage.css'
 
 export function MenuHeader() {
   return (

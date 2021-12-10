@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import IconHeader from "./IconHeader"
 import { MenuHeader } from "./MenuHeader";
-import '../Components/Styles/HeaderPage.css'
+import '../Styles/HeaderPage.css'
 
 class HeaderPage extends Component {
   render() {

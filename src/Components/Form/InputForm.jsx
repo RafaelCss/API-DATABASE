@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./Styles/Form.css";
-import api from "../../src/api/Api";
+import "../Styles/Form.css";
+import api from "../../api/Api";
 
 class InputForm extends Component {
   constructor(props) {

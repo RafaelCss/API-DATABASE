@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import InputForm from "./InputForm";
-import "./Styles/Form.css"
+import "../Styles/Form.css"
 
 class Form extends Component {
   onSubmit(dada) {
