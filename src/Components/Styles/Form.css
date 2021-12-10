@@ -1,0 +1,20 @@
+.Form {
+  display: flex; 
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  background-color: beige; 
+}
+
+.Form section {
+   display: flex;
+   align-items: center;
+   margin: 10px;
+   padding: 10px 10px; 
+   justify-content: space-evenly; 
+}
+
+.Form section input {
+    margin: 10px;
+
+}

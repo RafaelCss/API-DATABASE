@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import HeaderPage from "./HeaderPage";
 import InputForm from "./InputForm";
+import "./Styles/Form.css"
 
 class Form extends Component {
   onSubmit(dada) {
@@ -9,7 +9,6 @@ class Form extends Component {
   render() {
     return (
       <form className='Form'>
-        <HeaderPage/>
         <InputForm onSubmit={this.onSubmit}/>
       </form>
     );

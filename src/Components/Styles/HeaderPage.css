@@ -1,6 +1,12 @@
+
 header {
   display: flex;
-  background: rgba(28, 51, 224, 0.555);
+  width: 100%;
+  height: 10%;
+  color: white;
+  background: #005c97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005c97); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005c97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 nav li {
@@ -9,14 +15,27 @@ nav li {
 }
 
 nav a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
 }
 
-nav a :hover {
-  text-decoration: underline;
+nav {
+  position: absolute;
+  top: 5%;
+  right: 80px;
+}
+nav :hover {
   color: blueviolet;
+}
+
+.logo h1 svg{
+  margin: 10px 0 20px 0;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 10px;
 }
