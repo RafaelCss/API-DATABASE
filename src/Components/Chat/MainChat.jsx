@@ -7,6 +7,7 @@ function  MainChat() {
   
     return(
     <main>
+        <p>Olá MUndo</p>
      <HeaderChat/>
      <AsideChat/>
      <FooterChat/>   

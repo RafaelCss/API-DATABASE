@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import InputForm from "./InputForm";
-import HeaderPage from '../Header/HeaderPage'
+import HeaderPage from "../Header/HeaderPage"
 import "../Styles/Form.css"
 
 class Form extends Component {
