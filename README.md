@@ -1,9 +1,13 @@
 #Repaginação do Projeto Talking-chat- 
 
 * Objetivo : Criar um novo Front-End para este projeto, porém em React-Js.
+* Biblioteca Ant-Design-UI:
+* Biblioteca React-Js:
+
 ## Available Scripts
 
 In the project directory, you can run:
+page-chat
 
 ### `yarn start`
 

@@ -9,16 +9,16 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route element={<Pagina404/>}/>
+      {/* <Route path ="/" element={<Pagina404/>}/> */}
     </Routes>
       <Routes>
-        <Route exact path='/cadastro' element={<Form />} />
+        <Route exact path='cadastro' element={<Form/>} />
       </Routes>
       <Routes>
-        <Route exact path='/chat' element={<MainChat />} />
+        <Route exact path='chat' element={<MainChat/>} />
       </Routes>
       <Routes>
-        <Route exact path='/home' />
+        <Route exact path='home' />
       </Routes>
     </BrowserRouter>
   );
