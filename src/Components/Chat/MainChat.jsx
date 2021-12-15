@@ -4,12 +4,12 @@ import { AsideChat } from "./AsideChat";
 import HeaderChat from "./HeaderChat";
 import FooterChat from "./FooterChat";
 
-function  MainChat() {
-  
+function  MainChat(props) {
+
     return(
     <main>
      <HeaderChat/>
-     <AsideChat/>
+     <AsideChat />
      <FooterChat/>   
     </main>
     )

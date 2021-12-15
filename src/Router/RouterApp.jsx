@@ -18,7 +18,7 @@ function App() {
         <Route exact path='chat' element={<MainChat/>} />
       </Routes>
       <Routes>
-        <Route exact path='home' />
+        <Route exact element={<MainChat/>} />
       </Routes>
     </BrowserRouter>
   );
