@@ -48,13 +48,51 @@ aside::-webkit-scrollbar-thumb {
 
 .list-chat-contact {
   margin-top: 5px;
+}
+
+.list-chat-contact li{
+  margin-top: 5px;
   border: solid 1px #e6e6e6;
 }
 
 .search-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 10px;
   width: 100%;
-  height: 100px;
-  margin-bottom: 5px;
+  height: 50px;
   border: solid 1px #e6e6e6;
   box-sizing: border-box;
+}
+
+.search-contact  .search {
+  display: flex;
+  padding: 0px;
+  margin:33% 5% 33% 25%;
+  position: absolute;
+  width: 2rem;
+  top:0px;
+  right: 0px;
+  background-color: #ecedf3;
+  border-radius: 80%;
+}
+
+.photo-perfil{
+  display: flex;
+  margin: 20px;
+  align-items: flex-end;
+  width: 4.5rem;
+  background-size: cover;
+  background-color: black;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.photo-perfil img{
+  width: 4.5rem;
+  height: 4.5rem;
+  border: solid 1px white;
+  border-radius: 50%;
 }
