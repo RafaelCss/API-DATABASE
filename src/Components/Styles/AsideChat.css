@@ -22,14 +22,6 @@ aside div {
   margin: 0px;
 }
 
-.chat-sidebar {
-  width: 100%;
-  height: auto;
-  margin-bottom: 5px;
-  border: solid 1px #e6e6e6;
-  box-sizing: border-box;
-}
-
 /*Deixar o avatar redondo*/
 
 aside::-webkit-scrollbar {
@@ -46,16 +38,38 @@ aside::-webkit-scrollbar-thumb {
   border: 3px solid rgba(61, 64, 85, 0.171); /* creates padding around scroll thumb */
 }
 
-.list-chat-contact {
+.list-chat-contact { /*lista de contatos*/
+  width: 100%;
   margin-top: 5px;
 }
 
 .list-chat-contact li{
+  display: flex;
+  width: 100%;
+  height: 30%;
   margin-top: 5px;
   border: solid 1px #e6e6e6;
 }
 
-.search-contact {
+.photo-perfil-contact img{
+  left: 0px;
+  margin: 0px 0px 10px 10px;
+  width: 100%;
+  height: 100%;
+  border: solid 1px white;
+  border-radius: 50%;
+}
+
+.chat-contact{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 5px;
+
+}
+
+.search-contact { /*Caixa procurar contatos e add contatos*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,33 +80,32 @@ aside::-webkit-scrollbar-thumb {
   border: solid 1px #e6e6e6;
   box-sizing: border-box;
 }
-
-.search-contact  .search {
+.chat-sidebar {
   display: flex;
-  padding: 0px;
-  margin:33% 5% 33% 25%;
-  position: absolute;
-  width: 2rem;
-  top:0px;
-  right: 0px;
-  background-color: #ecedf3;
-  border-radius: 80%;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 5px;
+  border: solid 1px #e6e6e6;
+  box-sizing: border-box;
 }
 
-.photo-perfil{
+.photo-perfil{ /*Perfil user*/
   display: flex;
-  margin: 20px;
-  align-items: flex-end;
-  width: 4.5rem;
+  margin: 10px 10px 20px 5px;
+  position: absolute;
+  left: 0px;
+  width:30%;
   background-size: cover;
   background-color: black;
-  height: 3rem;
-  border-radius: 50%;
+  height: 4%;
 }
 
 .photo-perfil img{
-  width: 4.5rem;
-  height: 4.5rem;
+  left: 0px;
+  margin: 0px 0px 10px 10px;
+  width: 100%;
+  height: 100%;
   border: solid 1px white;
   border-radius: 50%;
 }

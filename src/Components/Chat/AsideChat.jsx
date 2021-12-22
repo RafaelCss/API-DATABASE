@@ -16,11 +16,15 @@ export function AsideChat(props) {
       <div className='search-contact'>
         <h3>Meus Contatos</h3>
       </div>
+
       <ul className='list-chat-contact'>
         {arry.map((item, index) => {
           return (
             <li key={index}>
               <div className='chat-contact'>
+                <div className='photo-perfil-contact'>
+                  <img src={img}></img>
+                </div>
                 <h3>{item}</h3>
                 <span></span>
               </div>
