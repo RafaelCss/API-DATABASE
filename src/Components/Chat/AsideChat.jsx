@@ -21,13 +21,13 @@ export function AsideChat(props) {
         {arry.map((item, index) => {
           return (
             <li key={index}>
-              <div className='chat-contact'>
+              
                 <div className='photo-perfil-contact'>
                   <img src={img}></img>
                 </div>
                 <h3>{item}</h3>
                 <span></span>
-              </div>
+
             </li>
           );
         })}
