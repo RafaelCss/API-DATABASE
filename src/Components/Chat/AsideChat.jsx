@@ -2,6 +2,7 @@ import React from "react";
 import img from "../Images/rafael.png";
 import "../Styles/AsideChat.css";
 
+
 export function AsideChat(props) {
   const arry = ["Jack", "Vaca", "Panela", "Lata", "Luanda", "Coelho", "Cabra"];
 
