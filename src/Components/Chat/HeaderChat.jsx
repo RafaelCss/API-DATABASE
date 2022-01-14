@@ -10,15 +10,15 @@ const Header = styled.header`
     justify-content:center;
     align-items: center;
     padding: 0.5rem;
-    background-color: #f5f5f5;
+    background-color: #686363;
     border-bottom: 1px solid #e3e3e3;
 `;
 
 
  export default function HeaderChat(){
      return(
-        <Header>
-
+        <Header className="headerChat">
+       
         </Header>
      )
  }
