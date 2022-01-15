@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React  from "react";
 import IconHeader from "./IconHeader"
 import { MenuHeader } from "./MenuHeader";
 import '../Styles/HeaderPage.css'
 
-class HeaderPage extends Component {
-  render() {
+const HeaderPage = () => {
+  
     return (
       <header>
         <div className='logo'>
@@ -16,7 +16,6 @@ class HeaderPage extends Component {
         </div>
       </header>
     );
-  }
 }
 
 export default HeaderPage;

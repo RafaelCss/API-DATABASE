@@ -1,57 +1,41 @@
-import React, { Component } from "react";
+import React from "react";
+import {useState} from "react"
 import "../Styles/Form.css";
-import api from "../../api/Api";
+import {UserContext} from "../../Context/UserData"
 
-class InputForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      password: "",
-    };
-  }
 
-  dataForm(event) {
-    const state = Object.assign({}, this.state);
-    const campo = event.target.name;
-    state[campo] = event.target.value;
-    this.setState(state);
-  }
 
-  _onSubmit(event) {
-    event.preventDefault();
+const  InputForm = () => {
 
-    this.props.onSubmit(this.state);
-    // enviar informações para o servidor ..
-    this.componentWillUnmount();
-  }
-  async componentWillUnmount() {
-    const state = Object.assign({}, this.state);
-    const resposta = await api.post("/cadastro", {
-      body: JSON.stringify(state),
-    });
-    resposta.then((res) => {
-      console.log(res);
-    });
-  }
-  render() {
+  const {nome , setNome} = useState('Qual é seu nome ?');
+  const {email, setEmail} = useState('Digite sua senha ...');
+  const { senha , setSenha} = useState('*******')
     return (
       <section>
+        <UserContext.Consumer value={nome, setNome, email, setEmail, senha, setSenha}>
+          { () => (
         <div className="inputs">
           <label htmlFor='name'>Nome:</label>
-          <input type='text' name='name'value={this.state.name} onChange={this.dataForm.bind(this)} id='name' />
+
+          <input type='text' name='name'value={nome} onChange={setNome} id='name' />
+
           <label htmlFor='email'>Email:</label>
-          <input type='email' name='email'  value={this.state.email} onChange={this.dataForm.bind(this)} id='email' />
+
+          <input type='email' name='email'  value={email} onChange={setEmail} id='email' />
+
           <label htmlFor='password'>Senha:</label>
-          <input type='password' name='password' value={this.state.password} onChange={this.dataForm.bind(this)} id='password' />
-          <button type='submit' onClick={(event) => this._onSubmit(this)}>
+
+          <input type='password' name='password' value={senha} onChange={setSenha} id='password' />
+
+          <button type='submit' onClick={() => console.log(nome, email, senha )}>
             Cadastrar
           </button>
         </div>
+          )}
+      </UserContext.Consumer>
       </section>
     );
-  }
+  
 }
 
 export default InputForm;
