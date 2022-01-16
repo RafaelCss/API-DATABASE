@@ -15,7 +15,7 @@ const HeaderPage = () => {
             <MenuHeader/>
         </div>
       </header>
-    );
+    )
 }
 
 export default HeaderPage;
