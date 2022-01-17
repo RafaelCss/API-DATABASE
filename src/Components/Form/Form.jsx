@@ -18,7 +18,7 @@ const  Form = () => {
         <div className="inputs">
           <label htmlFor='name'>Nome:</label>
 
-          <input type='text' name='name'value={nome} onChange={setNome} id='name' />
+          <input type='text' name='name' value={nome} onChange={setNome} id='name' />
 
           <label htmlFor='email'>Email:</label>
 

@@ -1,17 +1,16 @@
 
-import {createContext , useState} from 'react'
+import React, {createContext , useState} from 'react'
 
 export const  UserContext =  createContext()
 
 export const UserProvider = ({children}) => {
-
-    const {nome , setNome} = useState('Qual é seu nome ?');
-    const {email, setEmail} = useState('Digite sua senha ...');
-    const { senha , setSenha} = useState('*******')
-
-    // console.log(nome, email)
+ 
+    const [nome , setNome] = useState();
+    const [email, setEmail] = useState();
+    const  [senha , setSenha] = useState()
+    
     return (
-    <UserContext.Provider value={{nome, setNome, email, setEmail, senha, setSenha}}>
+    <UserContext.Provider value={nome, setNome, email, setEmail, senha, setSenha}>
        {children} 
     </UserContext.Provider>
     )     
