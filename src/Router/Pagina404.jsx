@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import Form from "../Components/Form/Form";
 
 
 const PageErro = styled.div`
@@ -24,7 +22,6 @@ const Pagina404 = () => {
   return (
       <PageErro>
         <p>Ops, está Pagina não existe</p>
-        <Link to={'/chat'}>{<Form/>}</Link>
       </PageErro>
   );
 };
