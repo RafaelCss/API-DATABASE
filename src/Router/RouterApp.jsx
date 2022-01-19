@@ -12,7 +12,7 @@ function App() {
       <Routes>
 
         <Route 
-        exact path='*' 
+        exact path='/chat' 
         element={<Pagina404 /> } /> {/*sem correspondência */}
 
         <Route
