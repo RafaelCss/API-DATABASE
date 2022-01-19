@@ -11,8 +11,8 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route 
-        exact path='/chat' 
+        <Route  
+        path='*' 
         element={<Pagina404 /> } /> {/*sem correspondência */}
 
         <Route
