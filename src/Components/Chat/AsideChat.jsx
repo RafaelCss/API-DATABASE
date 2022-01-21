@@ -1,38 +1,47 @@
-import React from "react";
-import img from "../Images/rafael.png";
-import "../Styles/AsideChat.css";
+import React, {useState} from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import Avatar from '@material-ui/core/Avatar';
+import imagem from "../Images/rafael.png"
+import "../Styles/AsideChat.css"
 
 
-export function AsideChat(props) {
-  const arry = ["Jack", "Vaca", "Panela", "Lata", "Luanda", "Coelho", "Cabra"];
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: '100%',
+    maxWidth: 360,
+    backgroundColor: theme.palette.background.paper,
+  },
+}));
 
+export const  AsideChat = () => {
+  const classes = useStyles();
+ 
   return (
     <aside>
-      <div className='chat-sidebar'>
-        <div className='photo-perfil'>
-          <img src={img}></img>
-        </div>
-      </div>
-
-      <div className='search-contact'>
-        <h3>Meus Contatos</h3>
-      </div>
-
-      <ul className='list-chat-contact'>
-        {arry.map((item, index) => {
-          return (
-            <li key={index}>
-              
-                <div className='photo-perfil-contact'>
-                  <img src={img}></img>
-                </div>
-                <h3>{item}</h3>
-                <span></span>
-
-            </li>
-          );
-        })}
-      </ul>
+    <List dense className={"list-chat-contact"}>
+      {["Maria", "João ", "Rubia", "Jaqueline"].map((value) => {
+        const labelId = `checkbox-list-secondary-label-${value}`;
+        return (
+          <ListItem key={value} button>
+            <ListItemAvatar>
+              <Avatar
+                alt={`Avatar n°${value + 1}`}
+                src={` ${imagem}`}
+              />
+            </ListItemAvatar>
+            <ListItemText id={labelId} primary={`${value}`} />
+            <ListItemSecondaryAction>
+             
+            </ListItemSecondaryAction>
+          </ListItem>
+        );
+      })}
+    </List>
     </aside>
   );
 }
