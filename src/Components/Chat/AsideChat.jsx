@@ -24,7 +24,7 @@ export const  AsideChat = () => {
   return (
     <aside>
     <List dense className={"list-chat-contact"}>
-      {["Maria", "João ", "Rubia", "Jaqueline"].map((value) => {
+      {["Teste1","Teste2"].map((value) => {
         const labelId = `checkbox-list-secondary-label-${value}`;
         return (
           <ListItem key={value} button>
