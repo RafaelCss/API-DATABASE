@@ -36,7 +36,7 @@ export const  AsideChat = () => {
             </ListItemAvatar>
             <ListItemText id={labelId} primary={`${value}`} />
             <ListItemSecondaryAction>
-             
+             ''
             </ListItemSecondaryAction>
           </ListItem>
         );
