@@ -2,6 +2,7 @@ import React from "react";
 import "../Styles/reset.css"
 import { AsideChat } from "./AsideChat";
 import { ChatProvider } from "./ContextChat";
+import { BodyChat } from "./HeaderChat";
 
 function  MainChat() {
 
@@ -9,6 +10,7 @@ function  MainChat() {
     <main>
      <ChatProvider>
         <AsideChat />
+        <BodyChat/>
     </ChatProvider>   
     </main>
     )

@@ -24,7 +24,7 @@ export const  AsideChat = () => {
   const userChat = useContext(ContextChat);
 
   function handleClick(event) {
-    userChat.setUserChat(event.target.innerText); 
+  
   }
  
   return (
