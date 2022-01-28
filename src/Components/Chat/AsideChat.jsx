@@ -8,7 +8,8 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import imagem from "../Images/rafael.png"
 import "../Styles/AsideChat.css"
-
+import { useContext } from 'react';
+import {ContextChat} from './ContextChat';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +20,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const  AsideChat = () => {
-  const classes = useStyles();
+  
+  const userChat = useContext(ContextChat);
+
+  function handleClick(event) {
+    userChat.setUserChat(event.target.innerText); 
+  }
  
   return (
     <aside>
@@ -36,7 +42,7 @@ export const  AsideChat = () => {
             </ListItemAvatar>
             <ListItemText id={labelId} primary={`${value}`} />
             <ListItemSecondaryAction>
-            
+              <span>online</span>
             </ListItemSecondaryAction>
           </ListItem>
         );
