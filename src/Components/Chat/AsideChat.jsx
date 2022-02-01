@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+//import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
@@ -8,24 +8,17 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import imagem from "../Images/rafael.png"
 import "../Styles/AsideChat.css"
-import { useContext } from 'react';
-import {ContextChat} from './ContextChat';
 
-const useStyles = makeStyles((theme) => ({
+/* const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
   },
-}));
+})); */
 
 export const  AsideChat = () => {
   
-  const userChat = useContext(ContextChat);
-
-  function handleClick(event) {
-  
-  }
  
   return (
     <aside>

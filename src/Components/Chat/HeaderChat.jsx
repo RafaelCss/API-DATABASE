@@ -17,22 +17,23 @@ const Headers = styled.div`
 
 const InputChat = styled.input`
   display: flex;
-  right: 0px;
-  width: 70%;
-  height: 30px;
   justify-content: center;
-  align-items: flex-end;
-  padding: 0.5rem;
-  background-color: #686363;
-  border-bottom: 1px solid #e3e3e3;
+  align-items: center;
+  position: absolute;
+  bottom: 1px;
+  right: 10px;
+  height:20px;
+  width: 65%;
+  margin: 0px;
 `;
 
 export function HeaderChat() {
   return (
     <Headers>
-      <Avatar 
+      <Avatar
       /* alt='Remy Sharp' 
-      src='./images/avatar/1.jpg' */ />
+      src='./images/avatar/1.jpg' */
+      />
     </Headers>
   );
 }
