@@ -1,19 +1,18 @@
 import React from "react";
-import "../Styles/reset.css"
+import "../Styles/reset.css";
 import { AsideChat } from "./AsideChat";
-import { BodyChat } from "./HeaderChat";
-import "../Images/rafael.png"
-function  MainChat() {
+import { HeaderChat } from "./HeaderChat";
+import "../Images/rafael.png";
 
-    return(
+
+
+function MainChat() {
+  return (
     <main>
-     
-        <AsideChat />
-        <BodyChat/>
-    
+      <AsideChat />
+      <HeaderChat />
     </main>
-    )
-  
+  );
 }
 
 export default MainChat;

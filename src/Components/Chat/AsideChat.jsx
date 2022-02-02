@@ -23,19 +23,21 @@ export const  AsideChat = () => {
   const [image, setImage] = useState();
  
 
-  function addDataFromHeader ( value , imagem ){
+  function addDataFromHeader ( value  ){
     setContact(value)
-    setImage(imagem)
+    setImage("../Images/rafael.png")
+   
   }
 
   return (
     <aside>
+
     <ContextChat.Provider value={{contact, setContact, image, setImage}}>
     <List dense className={"list-chat-contact"}>
       {["Teste1","Teste2"].map((value) => {
         const labelId = `checkbox-list-secondary-label-${value}`;
         return (
-          <ListItem key={value} onClick = {()=> addDataFromHeader(value, imagem) } button>
+          <ListItem key={value} onClick = {()=> addDataFromHeader(value) } button>
             <ListItemAvatar>
               <Avatar 
                 alt={`Avatar n°${value + 1}`}

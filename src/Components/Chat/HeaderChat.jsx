@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Avatar from "@material-ui/core/Avatar";
 import { ContextChat } from "./ContextChat";
 
-
 const Headers = styled.div`
   display: flex;
   position: absolute;
@@ -33,27 +32,12 @@ const InputChat = styled.input`
 export function HeaderChat() {
   return (
     <>
-    <Headers>
-    <ContextChat.Consumer>
-      {({ contact , imagem }) => (
-        
-          <Avatar alt='Remy Sharp' src={imagem} />
-          
-      )}
-    </ContextChat.Consumer>
-    </Headers>
+      <Headers>
+        <ContextChat.Consumer>{({ contact, imagem }) => <Avatar alt={contact} src={imagem} />}</ContextChat.Consumer>
+      </Headers>
+        <div></div>
+      <InputChat/>
     </>
   );
 }
 
-export const BodyChat = () => {
-  return (
-    <>
-      <HeaderChat />
-
-      <div></div>
-
-      <InputChat />
-    </>
-  );
-};
