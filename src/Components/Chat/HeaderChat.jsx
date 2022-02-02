@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Avatar from "@material-ui/core/Avatar";
+import { ContextChat } from "./ContextChat";
+
 
 const Headers = styled.div`
   display: flex;
@@ -22,19 +24,25 @@ const InputChat = styled.input`
   position: absolute;
   bottom: 1px;
   right: 10px;
-  height:20px;
+  height: 20px;
   width: 65%;
   margin: 0px;
+  color: white;
 `;
-
+/* './images/avatar/1.jpg'  */
 export function HeaderChat() {
   return (
+    <>
     <Headers>
-      <Avatar
-      /* alt='Remy Sharp' 
-      src='./images/avatar/1.jpg' */
-      />
+    <ContextChat.Consumer>
+      {({ contact , imagem }) => (
+        
+          <Avatar alt='Remy Sharp' src={imagem} />
+          
+      )}
+    </ContextChat.Consumer>
     </Headers>
+    </>
   );
 }
 
