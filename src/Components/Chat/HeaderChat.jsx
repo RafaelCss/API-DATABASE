@@ -14,6 +14,7 @@ const Headers = styled.div`
   padding: 0.5rem;
   background-color: #686363;
   border-bottom: 1px solid #e3e3e3;
+  color : white;
 `;
 
 const InputChat = styled.input`
@@ -22,20 +23,28 @@ const InputChat = styled.input`
   align-items: center;
   position: absolute;
   bottom: 1px;
-  right: 10px;
+  right: 200px;
   height: 20px;
-  width: 65%;
+  width: 40%;
   margin: 0px;
-  color: white;
+  border-radius: 2px;
 `;
+
+const NameUser = styled.h3`
+  color: aqua;
+`
 /* './images/avatar/1.jpg'  */
+{/* <Avatar alt={contact} src={imagem} /> */}
 export function HeaderChat() {
   return (
     <>
       <Headers>
-        <ContextChat.Consumer>{({ contact, imagem }) => <Avatar alt={contact} src={imagem} />}</ContextChat.Consumer>
+        <ContextChat.Consumer>{
+        ({ contact }) => 
+        <Avatar alt={contact} src={'./images/avatar/1.jpg'} />
+        }</ContextChat.Consumer>
       </Headers>
-        <div></div>
+      
       <InputChat/>
     </>
   );

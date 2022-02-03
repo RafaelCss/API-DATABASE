@@ -12,7 +12,7 @@ export const  ChatProvider = ({children}) => {
     
     return (
     <ContextChat.Provider value={contact, setContact, image, setImage}>      
-       <HeaderChat/>
+        {children}
     </ContextChat.Provider>
     )     
 }
